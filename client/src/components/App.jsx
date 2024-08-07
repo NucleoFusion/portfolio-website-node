@@ -1,5 +1,6 @@
 import React from "react";
 import HeroSection from "./HeroSection/HeroSection";
+import AboutSection from "./AboutSection/AboutSection";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         </video>
       </div>
       <HeroSection />
+      <AboutSection />
       <hr style={{ color: "#abb2bf" }} />
     </>
   );

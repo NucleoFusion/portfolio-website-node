@@ -7,7 +7,7 @@ import TitleBlock from "./TitleBlock/TitleBlock";
 
 export default function HeroSection() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='Hero'>
       <NameDetails />
       <LogoBlock />
       <StackBlock />

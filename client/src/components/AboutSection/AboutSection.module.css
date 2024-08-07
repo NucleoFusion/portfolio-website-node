@@ -1,0 +1,43 @@
+.container {
+  width: 50vw;
+  height: 35vw;
+
+  margin-left: 25.5vw;
+  margin-top: 5.725vw;
+  margin-bottom: 5.75vw;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  gap: 1vw;
+}
+
+.container div {
+  background-color: #32363e;
+  border-radius: 5px;
+  color: white;
+
+  opacity: 0.8;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.imageContainer {
+  grid-row: span 5;
+}
+
+.aboutLocationContainer {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.qualityContainer {
+  grid-column: span 2;
+  grid-row: span 4;
+}
+
+.detailsContainer {
+  grid-row: span 5;
+  grid-column: ;
+}

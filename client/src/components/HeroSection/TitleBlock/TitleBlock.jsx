@@ -1,11 +1,13 @@
 import React from "react";
 import styles from "../HeroSection.module.css";
 import TitleCard from "./TitleCard/TitleCard";
+import $ from 'jquery';
 
 export default function TitleBlock() {
 
   function toAbout(){
-    
+    $('#Hero').hide();
+    $('#About').show()
   }
 
   return (

@@ -53,11 +53,6 @@
   }
 }
 
-@keyframes scale-04 {
-  100%{
-    transform: scale(1.04);
-  }
-}
 
 .slideOutLeft {
   animation: slide-out-left 1.5s ease-in-out;
