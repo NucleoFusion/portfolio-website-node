@@ -64,6 +64,31 @@
   }
 }
 
+@keyframes wipe-right {
+  0%{
+    width: 0;
+    overflow-y: hidden;
+  }
+  99%{
+    overflow-y: hidden;
+  }
+  100%{
+    width: auto;
+    overflow-y: auto;
+  }
+}
+
+@keyframes linearwipe{ 
+  0% { width: 0; } 
+}  
+
+@keyframes scale-04 {
+  100%{
+    transform: scale(1.04);
+  }
+}
+
+
 .container {
   width: 50vw;
   height: 35vw;
@@ -103,6 +128,8 @@
 }
 
 .titleBlock {
+  
+
   grid-row: span 3;
   grid-column: span 2;
 
@@ -166,7 +193,7 @@
 
 .LogoContainer > a {
   transition: opacity 0.2s ease-in-out;
-  margin-left: 1vw;
+  margin-left: 1.5vw;
 }
 
 .logo {
@@ -203,6 +230,11 @@
   margin-bottom: 2%;
 
   position: relative;
+}
+
+.TitleCardContainer:hover{
+  background-color: #282c34;
+  transform: scale(1.04);
 }
 
 .titleBlock div h5 {
@@ -247,7 +279,7 @@
 
 #nav div {
   padding-right: 0%;
-  padding-left: 10%;
+  padding-left: 15%;
 
   transition: all 0.5s ease-in-out;
 }
@@ -258,8 +290,31 @@
   position: absolute;
   /* bottom: -100; */
   right: 0;
-    bottom: 0;
+  bottom: -34.75vh;
+
+  width: 100%;
+
   color: #abb2bf;
 
   z-index: 1;
+
+  padding: 1vh;
+}
+
+.nameDetailsBlock:hover h2,
+.nameDetailsBlock:hover h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 10em;
+  animation: linearwipe 2s; 
+}
+
+#titleBlockTransition{
+  transition: all 0.5s ease-in-out;
+}
+
+#titleBlockTransition:hover{
+  transform: scale(1.04);
+  opacity: 1;
+  box-shadow: 2px 2px 5px #abb2bf, -2px -2px 5px #abb2bf;
 }

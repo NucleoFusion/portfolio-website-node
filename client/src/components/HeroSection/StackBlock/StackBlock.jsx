@@ -1,14 +1,40 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../HeroSection.module.css";
 import $ from "jquery";
 
 export default function StackBlock() {
+
   function dependencyDropdown() {
     $(`.${styles.titleBlock}`).css({
       transform: "translateX(-20vw)",
       opacity: 0,
     });
-    $(".dependencyDropdown").css('visibility', "visible");
+    $(`.${styles.dependencyDropdown}`).css({'visibility': "visible", 'opacity': 1});
+  }
+
+  function hideDropdown(){
+    $(`.${styles.dependencyDropdown}`).css({'visibility': "hidden", 'opacity': 0});
+    $(`.${styles.titleBlock}`).css({
+      transform: "translateX(0)",
+      opacity: 0.8,
+      display: 'inline-block'
+    });
+    $(`.${styles.titleBlock}`).on({
+      mouseenter:function (){
+        $(this).css(
+          {
+            transform: 'scale(1.04)',
+            opacity: 1
+          })
+        },
+        mouseleave: function (){
+          $(this).css(
+            {
+              transform: 'scale(1)',
+              opacity: 0.8
+            })
+          }
+    });
   }
 
   return (
@@ -68,10 +94,17 @@ export default function StackBlock() {
       </button>
       <div className={styles.dependencyDropdown}>
         <ul>
+          <h5>Some Common Dependencies :-</h5>
           <li>axios</li>
           <li>cors</li>
           <li>express</li>
           <li>react-router-dom</li>
+          <li>passport</li>
+          <li>bcrypt</li>
+          <li>jquery</li>
+          <li>jscookie</li>
+          <li>jsonwebtoken</li>
+          <button style={{color:'#abb2bf'}} onClick={hideDropdown}>Close</button>
         </ul>
       </div>
     </div>

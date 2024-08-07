@@ -5,10 +5,12 @@ export default function NameDetails() {
   return (
     <div className={styles.nameDetailsBlock}>
       <div>
-        <h2 className="dancing-script">Lakshit Singh</h2>
+        <h2 className="dancing-script" style={{fontSize: '4.5vh'}}>Lakshit Singh</h2>
         <h4
           className="bebas-neue-regular"
-          style={{ textDecoration: "overline" }}
+          style={{ 
+            fontSize: '3.5vh'
+          }}
         >
           A Developer
         </h4>
@@ -20,16 +22,16 @@ export default function NameDetails() {
           style={{ width: "15%", height: "15%" }}
           alt="Location icon"
         />
-        <span className="montserrat" style={{ fontSize: "12.5px" }}>
+        <span className="montserrat" style={{ fontSize: "2vh" }}>
           {" "}
           Delhi, India.
         </span>
         <br />
-        <h6 className="montserrat">Open to Remote</h6>
+        <h6 className="montserrat" style={{fontSize: '1.75vh'}}>Open to Remote</h6>
       </div>
       <hr style={{ marginTop: "5px", marginBottom: "5px" }} />
       <div>
-        <p className="montserrat" style={{ fontSize: "12.5px" }}>
+        <p className="montserrat" style={{ fontSize: "2vh" }}>
           A passionate developer trying to gather as much knowledge as he can.
         </p>
       </div>
