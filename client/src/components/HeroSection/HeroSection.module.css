@@ -1,0 +1,265 @@
+@keyframes slide-right {
+  0% {
+    transform: translateX(-20vw);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0.8;
+  }
+}
+
+@keyframes slide-out-left {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-20vw);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(20vw);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0.8;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-20vw);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(20vw);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+}
+
+.container {
+  width: 50vw;
+  height: 35vw;
+
+  margin-left: 25.5vw;
+  margin-top: 5.725vw;
+  margin-bottom: 5.75vw;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  gap: 1vw;
+}
+
+.container div {
+  background-color: #32363e;
+  border-radius: 5px;
+  color: #abb2bf;
+
+  opacity: 0.9;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.nameDetailsBlock {
+  grid-row: span 3;
+  padding: 15px;
+
+  animation: slide-right 1.5s ease-in-out;
+}
+
+.container > div:hover {
+  transform: scale(1.04);
+  opacity: 1;
+  box-shadow: 2px 2px 5px #abb2bf, -2px -2px 5px #abb2bf;
+}
+
+.titleBlock {
+  grid-row: span 3;
+  grid-column: span 2;
+
+  animation: slide-up 1.5s ease-in-out;
+
+  padding: 4%;
+  padding-left: 4.5%;
+}
+
+.logoBlock {
+  animation: slide-down 1.5s ease-in-out;
+}
+
+.stackBlock {
+  grid-row: span 2;
+
+  animation: slide-left 1.5s ease-in-out;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  gap: 5%;
+
+  padding-left: 5.5%;
+  padding-top: 3%;
+
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.stackBlock button {
+  background-color: transparent;
+  border: none;
+
+  grid-column: span 5;
+
+  width: 105.5%;
+  margin-left: -5.5%;
+  margin-bottom: -5.5%;
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.stackBlock button:hover {
+  background-color: #282c34;
+}
+
+.LogoContainer {
+  margin-left: 4vw;
+}
+
+.LogoContainer > a:hover {
+  opacity: 0.5;
+}
+
+.LogoContainer > a {
+  transition: opacity 0.2s ease-in-out;
+  margin-left: 1vw;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 3vh;
+}
+
+.stacklogo {
+  width: 30px;
+  height: 30px;
+}
+
+.TitleCardContainer {
+  width: 15vw;
+  height: 5vh;
+
+  font-size: medium;
+
+  vertical-align: middle;
+  text-align: center;
+
+  background-color: #282c34;
+
+  padding-top: 1%;
+
+  border: solid #abb2bf 1px;
+
+  display: inline-block;
+
+  margin-left: 2%;
+  margin-bottom: 2%;
+
+  position: relative;
+}
+
+.titleBlock div h5 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.starTitle {
+  width: 15px;
+  height: 15px;
+
+  position: absolute;
+
+  top: 2px;
+  right: 2px;
+}
+
+.titleBlock div button {
+  background-color: transparent;
+  border: none;
+  color: #abb2bf;
+}
+
+.titleBlock div button:hover {
+  opacity: 0.7;
+}
+
+#nav {
+  width: 45vw;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.TitleBlockTitleContainer {
+  margin-left: 14.5%;
+}
+
+.navButton {
+  margin-left: 15%;
+  transition: all 0.2s ease-in-out;
+}
+
+#nav div {
+  padding-right: 0%;
+  padding-left: 10%;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.dependencyDropdown {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  /* bottom: -100; */
+  right: 0;
+    bottom: 0;
+  color: #abb2bf;
+
+  z-index: 1;
+}
