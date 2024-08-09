@@ -1,13 +1,18 @@
 import React from "react";
 import styles from "../HeroSection.module.css";
 import TitleCard from "./TitleCard/TitleCard";
-import $ from 'jquery';
+import $ from "jquery";
 
 export default function TitleBlock() {
-
-  function toAbout(){
-    $('#Hero').hide();
-    $('#About').show()
+  function toAbout() {
+    $("#Hero").css({
+      transform: "translateY(100vh)",
+      opacity: "0",
+    });
+    setTimeout(() => {
+      $("#Hero").hide();
+    }, 1000);
+    $("#About").show();
   }
 
   return (
@@ -23,8 +28,12 @@ export default function TitleBlock() {
       <br />
       <div id={styles.nav}>
         <div>
-          <button className={styles.navButton}>Home</button>
-          <button className={styles.navButton} onClick={toAbout}>About</button>
+          <button className={styles.navButton} disabled="true">
+            Home
+          </button>
+          <button className={styles.navButton} onClick={toAbout}>
+            About
+          </button>
           <button className={styles.navButton}>Projects</button>
         </div>
       </div>
