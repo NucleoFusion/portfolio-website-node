@@ -65,29 +65,30 @@
 }
 
 @keyframes wipe-right {
-  0%{
+  0% {
     width: 0;
     overflow-y: hidden;
   }
-  99%{
+  99% {
     overflow-y: hidden;
   }
-  100%{
+  100% {
     width: auto;
     overflow-y: auto;
   }
 }
 
-@keyframes linearwipe{ 
-  0% { width: 0; } 
-}  
-
-@keyframes scale-04 {
-  100%{
-    transform: scale(1.04);
+@keyframes linearwipe {
+  0% {
+    width: 0;
   }
 }
 
+@keyframes scale-04 {
+  100% {
+    transform: scale(1.04);
+  }
+}
 
 .container {
   width: 50vw;
@@ -128,8 +129,6 @@
 }
 
 .titleBlock {
-  
-
   grid-row: span 3;
   grid-column: span 2;
 
@@ -232,7 +231,7 @@
   position: relative;
 }
 
-.TitleCardContainer:hover{
+.TitleCardContainer:hover {
   background-color: #282c34;
   transform: scale(1.04);
 }
@@ -306,14 +305,14 @@
   white-space: nowrap;
   overflow: hidden;
   width: 10em;
-  animation: linearwipe 2s; 
+  animation: linearwipe 2s;
 }
 
-#titleBlockTransition{
+#titleBlockTransition {
   transition: all 0.5s ease-in-out;
 }
 
-#titleBlockTransition:hover{
+#titleBlockTransition:hover {
   transform: scale(1.04);
   opacity: 1;
   box-shadow: 2px 2px 5px #abb2bf, -2px -2px 5px #abb2bf;

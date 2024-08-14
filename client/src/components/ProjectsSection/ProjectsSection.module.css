@@ -1,0 +1,121 @@
+.container {
+  width: 50vw;
+  height: 35vw;
+
+  margin-left: 25.5vw;
+  margin-top: 5.725vw;
+  margin-bottom: 5.75vw;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  gap: 1vw;
+
+  transition: all 0.5s ease-in-out !important;
+}
+
+.container > div {
+  background-color: #32363e;
+  border-radius: 5px;
+  color: white;
+
+  opacity: 0.8;
+
+  padding: 1vw;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.container > div:hover > div {
+  border: solid yellow 1px;
+  visibility: visible !important;
+}
+
+.container:has(.proj1:hover) {
+  grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+}
+
+.proj1:hover ~ div > div,
+.container:has(.proj1:hover) > div:not(.proj1) > div {
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+}
+
+.container:has(.proj2:hover) {
+  grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+}
+
+.proj2:hover ~ div > div,
+.container:has(.proj2:hover) > div:not(.proj2) > div {
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+}
+
+.container:has(.proj3:hover) {
+  grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
+}
+
+.proj3:hover ~ div > div,
+.container:has(.proj3:hover) > div:not(.proj3) > div {
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+}
+
+.container:has(.proj4:hover) {
+  grid-template-columns: 1fr 1fr 1fr 5fr 1fr;
+}
+
+.proj4:hover ~ div > div,
+.container:has(.proj4:hover) > div:not(.proj4) > div {
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+}
+
+.container:has(.proj5:hover) {
+  grid-template-columns: 1fr 1fr 1fr 1fr 5fr;
+}
+
+.proj5:hover ~ div > div,
+.container:has(.proj5:hover) > div:not(.proj5) > div {
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+}
+
+.container > div h1 {
+  font-size: small;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+}
+
+.container > div p,
+.container > div ul,
+.container > div h5 {
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container > div:hover p,
+.container > div:hover ul,
+.container > div:hover h5 {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+.container > div:hover h1 {
+  font-size: 2em;
+}
+
+.container > div > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
+
+  gap: 2vh;
+}

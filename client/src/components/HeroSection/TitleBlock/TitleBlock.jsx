@@ -9,10 +9,30 @@ export default function TitleBlock() {
       transform: "translateY(100vh)",
       opacity: "0",
     });
+    $("#About").css({
+      transform: "translateY(0)",
+      opacity: "0.8",
+    });
     setTimeout(() => {
       $("#Hero").hide();
+      $("#About").show();
     }, 1000);
-    $("#About").show();
+  }
+
+  function toProjects() {
+    $("#Hero").css({
+      transform: "translateY(100vh)",
+      opacity: "0",
+    });
+    $("#Projects").css({
+      transform: "translateY(0)",
+      opacity: "0.8",
+    });
+
+    setTimeout(() => {
+      $("#Hero").hide();
+      $("#Projects").show();
+    }, 1000);
   }
 
   return (
@@ -34,7 +54,9 @@ export default function TitleBlock() {
           <button className={styles.navButton} onClick={toAbout}>
             About
           </button>
-          <button className={styles.navButton}>Projects</button>
+          <button className={styles.navButton} onClick={toProjects}>
+            Projects
+          </button>
         </div>
       </div>
     </div>

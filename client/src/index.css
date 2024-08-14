@@ -390,3 +390,13 @@ body {
 
   height: 100%;
 }
+
+#About {
+  /* position: absolute; */
+  transition: all 1.5s ease-in-out;
+}
+
+#Projects {
+  /* position: absolute; */
+  transition: all 1.5s ease-in-out;
+}

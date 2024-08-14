@@ -32,6 +32,7 @@ export default function AboutLocation() {
           textDecoration: "underline",
         }}
       >
+        {" "}
         Open To Remote Work Worldwide
       </span>
     </div>

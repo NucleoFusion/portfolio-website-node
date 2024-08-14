@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from "./HeroSection/HeroSection";
 import AboutSection from "./AboutSection/AboutSection";
+import ProjectsSection from "./ProjectsSection/ProjectsSection";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       </div>
       <HeroSection />
       <AboutSection />
+      <ProjectsSection />
       <hr style={{ color: "#abb2bf" }} />
     </>
   );

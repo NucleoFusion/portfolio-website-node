@@ -72,10 +72,6 @@
   99% {
     overflow-y: hidden;
   }
-  100% {
-    width: auto;
-    overflow-y: auto;
-  }
 }
 
 @keyframes linearwipe {
@@ -179,16 +175,22 @@
 
   background-color: transparent;
 
-  padding-top: 0.5vh;
+  padding-top: 0;
+
+  height: 4vh;
 }
 
 #nav div {
+  height: 100%;
+
   transition: all 0.5s ease-in-out;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
+
+  background-color: transparent;
 }
 
 .detailsContainer div button {
