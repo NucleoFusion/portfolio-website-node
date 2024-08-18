@@ -1,21 +1,20 @@
 import React from "react";
+import styles from "../ProjectsSection.module.css";
 
 export default function ProjectCard(props) {
-  console.log(props);
-
   return (
-    <div className={props.cardStyle}>
+    <div className={`bebas-neue-regular ${styles.cardStyle}`}>
       <div>
         <div>
           <h1>{props.name}</h1>
         </div>
         <div>
-          <p>{props.descr}</p>
+          <p className="montserrat">{props.descr}</p>
         </div>
         <div>
-          <h5>Stack Used:-</h5>
+          <h3>Stack Used:-</h3>
 
-          <ul>
+          <ul className="montserrat">
             {props.stackArr.map((obj) => {
               return <li key={props.stackArr.indexOf(obj)}>{obj}</li>;
             })}

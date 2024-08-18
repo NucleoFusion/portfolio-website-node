@@ -49,6 +49,8 @@ export default function AboutDetails() {
         eveniet magni consectetur? Molestiae placeat fugit, repellendus aliquid
         obcaecati tempora numquam tempore earum!
       </p>
+      <br />
+      <br />
       <div id={styles.nav}>
         <div>
           <button className={styles.navButton} onClick={toHome}>

@@ -1,94 +1,86 @@
+@keyframes slide-down {
+  0% {
+    transform: translateY(-20vw);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(20vw);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-20vw);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0.8;
+  }
+}
+
 .container {
   width: 50vw;
-  height: 35vw;
+  height: 60vh;
+  /* Let the container height adjust based on content */
+  display: flex;
+  gap: 1vw;
+  transition: all 0.5s ease-in-out;
 
   margin-left: 25.5vw;
   margin-top: 5.725vw;
-  margin-bottom: 5.75vw;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-
-  gap: 1vw;
-
-  transition: all 0.5s ease-in-out !important;
+  margin-bottom: 2vh;
 }
 
 .container > div {
   background-color: #32363e;
   border-radius: 5px;
   color: white;
-
   opacity: 0.8;
-
   padding: 1vw;
-
+  flex: 1;
   transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  min-height: 15vh;
+  /* Ensure a minimum height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Align content evenly within each div */
 }
 
-.container > div:hover > div {
-  border: solid yellow 1px;
-  visibility: visible !important;
+.container > div:hover {
+  flex: 5;
 }
 
-.container:has(.proj1:hover) {
-  grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
-}
-
-.proj1:hover ~ div > div,
-.container:has(.proj1:hover) > div:not(.proj1) > div {
-  visibility: hidden;
-  opacity: 0;
-  width: 0;
-}
-
-.container:has(.proj2:hover) {
-  grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
-}
-
-.proj2:hover ~ div > div,
-.container:has(.proj2:hover) > div:not(.proj2) > div {
-  visibility: hidden;
-  opacity: 0;
-  width: 0;
-}
-
-.container:has(.proj3:hover) {
-  grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
-}
-
-.proj3:hover ~ div > div,
-.container:has(.proj3:hover) > div:not(.proj3) > div {
-  visibility: hidden;
-  opacity: 0;
-  width: 0;
-}
-
-.container:has(.proj4:hover) {
-  grid-template-columns: 1fr 1fr 1fr 5fr 1fr;
-}
-
-.proj4:hover ~ div > div,
-.container:has(.proj4:hover) > div:not(.proj4) > div {
-  visibility: hidden;
-  opacity: 0;
-  width: 0;
-}
-
-.container:has(.proj5:hover) {
-  grid-template-columns: 1fr 1fr 1fr 1fr 5fr;
-}
-
-.proj5:hover ~ div > div,
-.container:has(.proj5:hover) > div:not(.proj5) > div {
-  visibility: hidden;
-  opacity: 0;
-  width: 0;
+.container > div:not(:hover) {
+  flex: 0.5;
+  opacity: 0.8;
 }
 
 .container > div h1 {
-  font-size: small;
+  font-size: 1.5em;
   transition: all 0.5s ease-in-out;
   text-align: center;
 }
@@ -96,7 +88,7 @@
 .container > div p,
 .container > div ul,
 .container > div h5 {
-  transition: all 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out 0.3s;
   visibility: hidden;
   opacity: 0;
 }
@@ -105,17 +97,70 @@
 .container > div:hover ul,
 .container > div:hover h5 {
   visibility: visible;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .container > div:hover h1 {
-  font-size: 2em;
+  font-size: 4em;
 }
 
 .container > div > div {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr;
-
+  display: flex;
+  flex-direction: column;
   gap: 2vh;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.cardStyle p {
+  text-align: center;
+}
+
+.cardStyle ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+.navbar {
+  height: 15vh;
+  width: 50vw;
+
+  opacity: 0.8;
+
+  margin-left: 25.5vw;
+  background-color: #32363e;
+
+  border-radius: 5px;
+
+  margin-bottom: 5vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: #abb2bf;
+
+  transition: opacity 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.container > div:nth-child(even) {
+  animation: slide-up 1s ease-in-out;
+}
+.container > div:nth-child(odd) {
+  animation: slide-down 1s ease-in-out;
+}
+
+.navbar {
+  animation: slide-right 1.5s ease-in-out;
 }
