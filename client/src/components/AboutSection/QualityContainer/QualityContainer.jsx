@@ -5,10 +5,12 @@ export default function QualityContainer() {
   return (
     <div className={styles.qualityContainer}>
       <p className="montserrat">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere beatae
-        consectetur iure necessitatibus dolorum? Recusandae perferendis, quia
-        eligendi voluptatum ex laudantium repellendus cumque quibusdam sit
-        officia, nisi beatae unde debitis.
+        I excel in <span>critical thinking</span> and{" "}
+        <span>problem-solving</span>, quickly learning and adapting to new
+        challenges. My attention to detail ensures thorough work, while my
+        strong <span>communication and teamwork skills</span> help me
+        collaborate effectively. I'm <span>curious and open-minded</span>,
+        always eager to explore new ideas and adapt to changing environments.
       </p>
     </div>
   );

@@ -38,18 +38,23 @@ export default function AboutDetails() {
   return (
     <div className={styles.detailsContainer}>
       <p className="montserrat" style={{ fontSize: "small" }}>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-        inventore incidunt eius delectus repudiandae, dolorum fuga voluptas
-        eveniet magni consectetur? Molestiae placeat fugit, repellendus aliquid
-        obcaecati tempora numquam tempore earum!
+        I am a dedicated and detail-oriented software developer with a strong
+        passion for problem-solving and learning. With over two years of project
+        experience in backend development, I enjoy taking on complex challenges
+        and finding efficient solutions. I am committed to delivering
+        high-quality work and always strive to ensure that every project I work
+        on meets the highest standards. I also believe in the power of teamwork
+        and communication, knowing that the best results come from working well
+        with others.
       </p>
       <p className="montserrat" style={{ fontSize: "small" }}>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-        inventore incidunt eius delectus repudiandae, dolorum fuga voluptas
-        eveniet magni consectetur? Molestiae placeat fugit, repellendus aliquid
-        obcaecati tempora numquam tempore earum!
+        I am adaptable and always eager to learn new technologies and
+        approaches. This curiosity keeps me updated with the latest industry
+        trends, allowing me to bring fresh ideas to my projects. I am
+        particularly interested in how software can shape the future of work and
+        improve our daily lives. My goal is to create solutions that not only
+        meet current needs but also prepare for future challenges.
       </p>
-      <br />
       <br />
       <div id={styles.nav}>
         <div>

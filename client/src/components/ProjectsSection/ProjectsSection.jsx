@@ -44,25 +44,25 @@ export default function ProjectsSection() {
         />
         <ProjectCard
           name="E-commerce {WIP}"
-          descr="The E-commerce website is a full-stack application built using Node.js, Express, React.js, and PostgreSQL. The backend is powered by Node.js and Express, providing a robust and scalable API for handling user authentication, product management, and order processing. React.js is used for the frontend, offering a dynamic and responsive user interface. PostgreSQL serves as the relational database, efficiently managing product catalogs, user data, and transaction records. The application integrates RESTful APIs for seamless communication between the frontend and backend, ensuring a smooth and intuitive shopping experience."
+          descr="The E-commerce website is a full-stack app using Node.js, Express, React.js, and PostgreSQL. Node.js and Express handle the backend, managing user authentication, product management, and orders. React.js powers the dynamic frontend, while PostgreSQL manages product catalogs, user data, and transactions. RESTful APIs ensure smooth communication between the frontend and backend."
           stackArr={["Node", "Express", "React", "Postgres", "HTML/CSS"]}
           cardStyle={styles.proj2}
         />
         <ProjectCard
           name="OnRemote {WIP}"
-          descr="**OnRemote** is an Inventory Management app designed to streamline and automate business processes. Built with a full-stack architecture using Node.js, Express, React.js, and PostgreSQL, the app provides a seamless interface for managing inventory, tracking stock levels, and processing orders. The backend, powered by Node.js and Express, handles complex business logic and secure data transactions, while the React.js frontend offers a user-friendly interface for real-time inventory updates and analytics. PostgreSQL is used as the database, ensuring reliable data storage and retrieval, making OnRemote a scalable solution for efficient inventory management."
+          descr="OnRemote is an Inventory Management app built with Node.js, Express, React.js, and PostgreSQL. It simplifies and automates inventory tasks, with Node.js and Express managing backend operations and secure data transactions. The React.js frontend provides a user-friendly interface for real-time updates and analytics, while PostgreSQL ensures reliable data storage and retrieval. This full-stack solution offers a scalable approach to efficient inventory management."
           stackArr={["Node", "Express", "React", "Postgres", "HTML/CSS"]}
           cardStyle={styles.proj3}
         />
         <ProjectCard
           name="ShortIt API"
-          descr="**ShortIt API** is a backend service for URL shortening, developed using Node.js, Express, and MongoDB. It efficiently converts long URLs into shorter, shareable links while managing the creation, storage, and redirection of these URLs. The API is designed to be lightweight and scalable, making it suitable for integration into larger systems or as a standalone service. MongoDB is utilized for storing URL data, allowing for flexible and efficient data management in a NoSQL environment."
+          descr="ShortIt API is a backend service for URL shortening, built with Node.js, Express, and MongoDB. It converts long URLs into shorter links and manages their creation, storage, and redirection. The API is lightweight and scalable, suitable for integration into larger systems or as a standalone service. MongoDB provides flexible and efficient data management in a NoSQL environment."
           stackArr={["Node", "Express", "Postgres", "HTML/CSS"]}
           cardStyle={styles.proj4}
         />
         <ProjectCard
           name="ToDo App"
-          descr="Todo App is a task management application built using Node.js, Express, React.js, and PostgreSQL. The backend, powered by Node.js and Express, manages user authentication, task creation, updates, and deletion, ensuring secure and efficient handling of user data. React.js is used on the frontend to provide a responsive and interactive interface where users can easily manage their tasks. PostgreSQL serves as the relational database, storing task data with reliability and supporting complex queries for organizing and retrieving tasks. The app is designed to be user-friendly and scalable, making task management straightforward and efficient."
+          descr="Todo App is a task management application built with Node.js, Express, React.js, and PostgreSQL. Node.js and Express handle backend functions like user authentication and task management, while React.js offers a responsive frontend for managing tasks. PostgreSQL stores task data reliably and supports complex queries. The app is designed to be user-friendly and scalable, making task management efficient and straightforward."
           stackArr={["Node", "Express", "React", "Postgres", "HTML/CSS"]}
           cardStyle={styles.proj5}
         />
