@@ -60,7 +60,7 @@ export default function AboutDetails() {
           <button className={styles.navButton} onClick={toHome}>
             Home
           </button>
-          <button className={styles.navButton} disabled="true">
+          <button className={styles.navButton} disabled={true}>
             About
           </button>
           <button className={styles.navButton} onClick={toProjects}>

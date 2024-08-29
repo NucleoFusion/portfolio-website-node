@@ -46,7 +46,7 @@ export default function TitleBlock() {
       <hr />
       <div id={styles.nav}>
         <div>
-          <button className={styles.navButton} disabled="true">
+          <button className={styles.navButton} disabled={true}>
             Home
           </button>
           <button className={styles.navButton} onClick={toAbout}>

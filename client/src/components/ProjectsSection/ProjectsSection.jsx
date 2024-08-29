@@ -74,7 +74,7 @@ export default function ProjectsSection() {
         <button className={styles.navButton} onClick={toAbout}>
           About
         </button>
-        <button className={styles.navButton} disabled="true">
+        <button className={styles.navButton} disabled={true}>
           Projects
         </button>
       </div>
