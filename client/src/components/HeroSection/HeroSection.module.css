@@ -105,7 +105,7 @@
   gap: 1vw;
 }
 
-.container div {
+.container > div {
   background-color: #32363e;
   border-radius: 5px;
   color: white;
@@ -272,13 +272,18 @@
 }
 
 .navButton {
-  margin-left: 15%;
   transition: all 0.2s ease-in-out;
 }
 
 #nav div {
-  padding-right: 0%;
-  padding-left: 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  gap: 1vw;
+
+  justify-content: center;
+  align-items: center;
 
   transition: all 0.5s ease-in-out;
 }
@@ -289,15 +294,26 @@
   position: absolute;
   /* bottom: -100; */
   right: 0;
-  bottom: -34.75vh;
+  bottom: -38.75vh;
 
   width: 100%;
 
   color: #abb2bf;
+  background-color: inherit;
+
+  font-size: 2vh;
 
   z-index: 1;
 
   padding: 1vh;
+
+  border-radius: 8px;
+}
+
+@media screen and (max-height: 768px) {
+  .dependencyDropdown {
+    bottom: -45.75vh;
+  }
 }
 
 .nameDetailsBlock:hover h2,
@@ -316,4 +332,16 @@
   transform: scale(1.04);
   opacity: 1;
   box-shadow: 2px 2px 5px #abb2bf, -2px -2px 5px #abb2bf;
+}
+
+.TitleCardContainer {
+  border-radius: 8px;
+
+  min-height: 6vh;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.TitleCardContainer h5 {
+  font-size: 3vh;
 }

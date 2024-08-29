@@ -101,7 +101,7 @@
 }
 
 .container > div:hover h1 {
-  font-size: 4em;
+  font-size: 2.5em;
 }
 
 .container > div > div {
@@ -163,4 +163,24 @@ button:hover {
 
 .navbar {
   animation: slide-right 1.5s ease-in-out;
+}
+
+.cardStyle p {
+  font-size: 1.5vh;
+}
+
+.cardStyle > div:not(:hover) {
+  visibility: hidden;
+}
+
+.cardStyle > div:hover {
+  visibility: visible;
+}
+
+.cardStyle > div:not(:hover) h1 {
+  visibility: visible;
+}
+
+.cardStyle ul {
+  font-size: 2vh;
 }

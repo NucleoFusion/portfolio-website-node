@@ -43,9 +43,7 @@ export default function TitleBlock() {
         <TitleCard title="Full-Stack Developer" special="true" />
         <TitleCard title="Software Developer" />
       </div>
-      <br />
       <hr />
-      <br />
       <div id={styles.nav}>
         <div>
           <button className={styles.navButton} disabled="true">

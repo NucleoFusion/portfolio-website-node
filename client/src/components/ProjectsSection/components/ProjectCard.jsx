@@ -12,8 +12,6 @@ export default function ProjectCard(props) {
           <p className="montserrat">{props.descr}</p>
         </div>
         <div>
-          <h3>Stack Used:-</h3>
-
           <ul className="montserrat">
             {props.stackArr.map((obj) => {
               return <li key={props.stackArr.indexOf(obj)}>{obj}</li>;

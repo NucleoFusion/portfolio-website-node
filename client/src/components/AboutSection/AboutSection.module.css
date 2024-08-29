@@ -116,7 +116,7 @@
   transition: all 1s ease-in-out;
 }
 
-.container div {
+.container > div {
   background-color: #32363e;
   border-radius: 5px;
   color: white;
@@ -141,7 +141,7 @@
 }
 
 .aboutLocationContainer {
-  padding: 0.5vw;
+  padding: 0.1vw;
 
   grid-column: span 2;
   grid-row: span 2;
@@ -153,6 +153,8 @@
   grid-column: span 2;
   grid-row: span 4;
 
+  font-size: 1.8vh;
+
   animation: slide-left 1.5s ease-in-out;
 }
 
@@ -161,6 +163,10 @@
   grid-column: span 3;
 
   animation: slide-up 1.5s ease-in-out;
+}
+
+.detailsContainer p {
+  font-size: 1.5vh;
 }
 
 .rotateAnimation {
