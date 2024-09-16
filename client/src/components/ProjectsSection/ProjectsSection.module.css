@@ -184,3 +184,15 @@ button:hover {
 .cardStyle ul {
   font-size: 2vh;
 }
+
+.container a {
+  color: inherit;
+}
+
+.container h1:has(a) {
+  transition: all 0.1s ease;
+}
+
+.container h1:has(a:hover) {
+  transform: scale(1.1);
+}

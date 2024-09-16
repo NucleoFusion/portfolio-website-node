@@ -37,32 +37,37 @@ export default function ProjectsSection() {
     <div id="Projects" style={{ display: "none" }}>
       <div className={styles.container}>
         <ProjectCard
-          name="AgroFuture"
-          descr="AgroFuture App: The AgroFuture app is a smart agricultural tool designed to empower farmers with critical information. It helps farmers analyze and predict weather patterns using advanced algorithms, ensuring they can make informed decisions about planting and harvesting. Additionally, the app provides detailed information on the latest hybrid seeds, including their benefits, optimal growing conditions, and yield potential, enabling farmers to maximize their crop production and stay updated with the latest agricultural innovations."
-          stackArr={["Node", "Express", "EJS", "MongoDB", "HTML/CSS"]}
+          name="Football API"
+          link="#"
+          descr="Built using Golang and MongoDB, FootballAPI offers detailed data on players, clubs, and stadiums. While it doesn't provide real-time updates, it serves as a reliable source for integrating structured football information into applications."
+          stackArr={["Go", "MongoDB"]}
           cardStyle={styles.proj1}
         />
         <ProjectCard
-          name="E-commerce {WIP}"
+          name="E-commerce - ONGOING"
+          link="#"
           descr="The E-commerce website is a full-stack app using Node.js, Express, React.js, and PostgreSQL. Node.js and Express handle the backend, managing user authentication, product management, and orders. React.js powers the dynamic frontend, while PostgreSQL manages product catalogs, user data, and transactions. RESTful APIs ensure smooth communication between the frontend and backend."
           stackArr={["Node", "Express", "React", "Postgres", "HTML/CSS"]}
           cardStyle={styles.proj2}
         />
         <ProjectCard
-          name="OnRemote {WIP}"
-          descr="OnRemote is an Inventory Management app built with Node.js, Express, React.js, and PostgreSQL. It simplifies and automates inventory tasks, with Node.js and Express managing backend operations and secure data transactions. The React.js frontend provides a user-friendly interface for real-time updates and analytics, while PostgreSQL ensures reliable data storage and retrieval. This full-stack solution offers a scalable approach to efficient inventory management."
-          stackArr={["Node", "Express", "React", "Postgres", "HTML/CSS"]}
+          name="Lapis oAuth"
+          link="#"
+          descr="Built with Golang and React, Lapis oAuth is a secure authentication service designed to simplify user login and authorization. It enables easy integration of third-party logins, ensuring seamless access management and data security for both users and developers."
+          stackArr={["Go", "React", "Postgres"]}
           cardStyle={styles.proj3}
         />
         <ProjectCard
           name="ShortIt API"
+          link="#"
           descr="ShortIt API is a backend service for URL shortening, built with Node.js, Express, and MongoDB. It converts long URLs into shorter links and manages their creation, storage, and redirection. The API is lightweight and scalable, suitable for integration into larger systems or as a standalone service. MongoDB provides flexible and efficient data management in a NoSQL environment."
           stackArr={["Node", "Express", "Postgres", "HTML/CSS"]}
           cardStyle={styles.proj4}
         />
         <ProjectCard
-          name="ToDo App"
-          descr="Todo App is a task management application built with Node.js, Express, React.js, and PostgreSQL. Node.js and Express handle backend functions like user authentication and task management, while React.js offers a responsive frontend for managing tasks. PostgreSQL stores task data reliably and supports complex queries. The app is designed to be user-friendly and scalable, making task management efficient and straightforward."
+          name="TranspoHub"
+          link="https://transpohub.vercel.app/"
+          descr="We developed a freelance platform designed to connect transporters and contractors efficiently. The platform enables transporters to showcase their services and contractors to easily find and hire suitable transport solutions for their projects. Key features include profile management, service listings, and a streamlined communication system to facilitate contract negotiations. This platform aims to simplify the process of matching contractors with reliable transporters in the industry."
           stackArr={["Node", "Express", "React", "Postgres", "HTML/CSS"]}
           cardStyle={styles.proj5}
         />

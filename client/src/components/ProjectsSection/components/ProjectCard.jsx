@@ -6,7 +6,9 @@ export default function ProjectCard(props) {
     <div className={`bebas-neue-regular ${styles.cardStyle}`}>
       <div>
         <div>
-          <h1>{props.name}</h1>
+          <h1>
+            <a href={props.link}>{props.name}</a>
+          </h1>
         </div>
         <div>
           <p className="montserrat">{props.descr}</p>
