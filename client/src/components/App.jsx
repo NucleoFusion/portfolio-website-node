@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroSection from "./HeroSection/HeroSection";
 import AboutSection from "./AboutSection/AboutSection";
 import ProjectsSection from "./ProjectsSection/ProjectsSection";
+import $ from "jquery";
 
 function App() {
+  useEffect(() => {
+    const width = $(window).width();
+    const height = $(window).height();
+
+    if (width < 1290 || height < 990) {
+      $(".popUp").show();
+    }
+  });
+
   return (
     <>
+      <div className="popUp" style={{ display: "none" }}>
+        <div>
+          <h1>This is a Desktop Site</h1>
+          <h4>To view the website properly please view from a desktop.</h4>
+        </div>
+      </div>
       <div className="video-container">
         <video autoPlay loop muted>
           <source
